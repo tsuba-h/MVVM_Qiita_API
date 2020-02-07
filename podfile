@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MVVM_GithubAPI' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MVVM_GithubAPI
+  pod 'Moya/RxSwift', '~> 13.0'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
+  pod 'RxDataSources', '~> 3.1.0'
+  pod 'Instantiate'
+  pod 'InstantiateStandard'
+  pod 'AlamofireImage', '~> 3.5'
+  target 'MVVM_GithubAPITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MVVM_GithubAPIUITests' do
+    # Pods for testing
+  end
+
+end

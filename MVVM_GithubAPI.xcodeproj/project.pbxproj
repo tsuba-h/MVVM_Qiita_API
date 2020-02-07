@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		2FCC204B23ED675500608486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCC204923ED675500608486 /* LaunchScreen.storyboard */; };
 		2FCC205623ED675500608486 /* MVVM_GithubAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC205523ED675500608486 /* MVVM_GithubAPITests.swift */; };
 		2FCC206123ED675500608486 /* MVVM_GithubAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC206023ED675500608486 /* MVVM_GithubAPIUITests.swift */; };
+		2FCC206F23ED695B00608486 /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC206E23ED695A00608486 /* QiitaAPI.swift */; };
+		2FCC207123ED6CE900608486 /* QiitaAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC207023ED6CE900608486 /* QiitaAPIResponse.swift */; };
+		2FCC207323ED6EA100608486 /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC207223ED6EA100608486 /* QiitaRepository.swift */; };
+		2FCC207523ED733700608486 /* QiitaDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC207423ED733700608486 /* QiitaDataSources.swift */; };
+		2FCC207823ED776F00608486 /* QiitaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC207723ED776F00608486 /* QiitaViewModel.swift */; };
+		5BF6B08E30497368B49282F5 /* Pods_MVVM_GithubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1995C41B0A5161CBF3EC69DB /* Pods_MVVM_GithubAPI.framework */; };
+		AFB0F7C0FFF18E73041CD8C7 /* Pods_MVVM_GithubAPI_MVVM_GithubAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3079AD3C22E7DFD252FAF94 /* Pods_MVVM_GithubAPI_MVVM_GithubAPIUITests.framework */; };
+		E64E32377D290B9CEB57A5B7 /* Pods_MVVM_GithubAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C63E2E36FBDC8F5D8245015 /* Pods_MVVM_GithubAPITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1995C41B0A5161CBF3EC69DB /* Pods_MVVM_GithubAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_GithubAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCC203B23ED674F00608486 /* MVVM_GithubAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_GithubAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCC203E23ED674F00608486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FCC204023ED674F00608486 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,19 @@
 		2FCC205C23ED675500608486 /* MVVM_GithubAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_GithubAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCC206023ED675500608486 /* MVVM_GithubAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_GithubAPIUITests.swift; sourceTree = "<group>"; };
 		2FCC206223ED675500608486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCC206E23ED695A00608486 /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
+		2FCC207023ED6CE900608486 /* QiitaAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPIResponse.swift; sourceTree = "<group>"; };
+		2FCC207223ED6EA100608486 /* QiitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRepository.swift; sourceTree = "<group>"; };
+		2FCC207423ED733700608486 /* QiitaDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaDataSources.swift; sourceTree = "<group>"; };
+		2FCC207723ED776F00608486 /* QiitaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewModel.swift; sourceTree = "<group>"; };
+		6387CE52C7F1DAE30FA891DA /* Pods-MVVM_GithubAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_GithubAPITests.release.xcconfig"; path = "Target Support Files/Pods-MVVM_GithubAPITests/Pods-MVVM_GithubAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C63E2E36FBDC8F5D8245015 /* Pods_MVVM_GithubAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_GithubAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FCE4CE301681F3F390E8E2 /* Pods-MVVM_GithubAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_GithubAPI.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_GithubAPI/Pods-MVVM_GithubAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		A22E7DF818BE88D0AA2073F4 /* Pods-MVVM_GithubAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_GithubAPI.release.xcconfig"; path = "Target Support Files/Pods-MVVM_GithubAPI/Pods-MVVM_GithubAPI.release.xcconfig"; sourceTree = "<group>"; };
+		A3079AD3C22E7DFD252FAF94 /* Pods_MVVM_GithubAPI_MVVM_GithubAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_GithubAPI_MVVM_GithubAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3362BFD61491F075F213EC0 /* Pods-MVVM_GithubAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_GithubAPITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_GithubAPITests/Pods-MVVM_GithubAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCFC136A3E77C260E368C2C3 /* Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E502031C4E83A7EEA157367B /* Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF6B08E30497368B49282F5 /* Pods_MVVM_GithubAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64E32377D290B9CEB57A5B7 /* Pods_MVVM_GithubAPITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB0F7C0FFF18E73041CD8C7 /* Pods_MVVM_GithubAPI_MVVM_GithubAPIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,8 @@
 				2FCC205423ED675500608486 /* MVVM_GithubAPITests */,
 				2FCC205F23ED675500608486 /* MVVM_GithubAPIUITests */,
 				2FCC203C23ED674F00608486 /* Products */,
+				74233957A011F05BEA0D5FD3 /* Pods */,
+				AEFE868721DDBA71701A01F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +128,10 @@
 			children = (
 				2FCC203E23ED674F00608486 /* AppDelegate.swift */,
 				2FCC204023ED674F00608486 /* SceneDelegate.swift */,
-				2FCC204223ED674F00608486 /* ViewController.swift */,
+				2FCC207623ED771400608486 /* Model */,
+				2FCC207723ED776F00608486 /* QiitaViewModel.swift */,
 				2FCC204423ED674F00608486 /* Main.storyboard */,
+				2FCC204223ED674F00608486 /* ViewController.swift */,
 				2FCC204723ED675500608486 /* Assets.xcassets */,
 				2FCC204923ED675500608486 /* LaunchScreen.storyboard */,
 				2FCC204C23ED675500608486 /* Info.plist */,
@@ -128,6 +157,40 @@
 			path = MVVM_GithubAPIUITests;
 			sourceTree = "<group>";
 		};
+		2FCC207623ED771400608486 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FCC206E23ED695A00608486 /* QiitaAPI.swift */,
+				2FCC207023ED6CE900608486 /* QiitaAPIResponse.swift */,
+				2FCC207223ED6EA100608486 /* QiitaRepository.swift */,
+				2FCC207423ED733700608486 /* QiitaDataSources.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74233957A011F05BEA0D5FD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95FCE4CE301681F3F390E8E2 /* Pods-MVVM_GithubAPI.debug.xcconfig */,
+				A22E7DF818BE88D0AA2073F4 /* Pods-MVVM_GithubAPI.release.xcconfig */,
+				CCFC136A3E77C260E368C2C3 /* Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.debug.xcconfig */,
+				E502031C4E83A7EEA157367B /* Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.release.xcconfig */,
+				C3362BFD61491F075F213EC0 /* Pods-MVVM_GithubAPITests.debug.xcconfig */,
+				6387CE52C7F1DAE30FA891DA /* Pods-MVVM_GithubAPITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AEFE868721DDBA71701A01F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1995C41B0A5161CBF3EC69DB /* Pods_MVVM_GithubAPI.framework */,
+				A3079AD3C22E7DFD252FAF94 /* Pods_MVVM_GithubAPI_MVVM_GithubAPIUITests.framework */,
+				7C63E2E36FBDC8F5D8245015 /* Pods_MVVM_GithubAPITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FCC206523ED675500608486 /* Build configuration list for PBXNativeTarget "MVVM_GithubAPI" */;
 			buildPhases = (
+				9F17BAA24100D8DE0E93A1CA /* [CP] Check Pods Manifest.lock */,
 				2FCC203723ED674F00608486 /* Sources */,
 				2FCC203823ED674F00608486 /* Frameworks */,
 				2FCC203923ED674F00608486 /* Resources */,
+				1DABD3C4754C351C39329866 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FCC206823ED675500608486 /* Build configuration list for PBXNativeTarget "MVVM_GithubAPITests" */;
 			buildPhases = (
+				688EC506B4376470C94D4B69 /* [CP] Check Pods Manifest.lock */,
 				2FCC204D23ED675500608486 /* Sources */,
 				2FCC204E23ED675500608486 /* Frameworks */,
 				2FCC204F23ED675500608486 /* Resources */,
@@ -170,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FCC206B23ED675500608486 /* Build configuration list for PBXNativeTarget "MVVM_GithubAPIUITests" */;
 			buildPhases = (
+				7B06698CD7C120EC2B6FE0AE /* [CP] Check Pods Manifest.lock */,
 				2FCC205823ED675500608486 /* Sources */,
 				2FCC205923ED675500608486 /* Frameworks */,
 				2FCC205A23ED675500608486 /* Resources */,
+				1BC59A926C50A5235D69A791 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +322,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BC59A926C50A5235D69A791 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DABD3C4754C351C39329866 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM_GithubAPI/Pods-MVVM_GithubAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM_GithubAPI/Pods-MVVM_GithubAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM_GithubAPI/Pods-MVVM_GithubAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		688EC506B4376470C94D4B69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM_GithubAPITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B06698CD7C120EC2B6FE0AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F17BAA24100D8DE0E93A1CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM_GithubAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FCC203723ED674F00608486 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,7 +432,12 @@
 			files = (
 				2FCC204323ED674F00608486 /* ViewController.swift in Sources */,
 				2FCC203F23ED674F00608486 /* AppDelegate.swift in Sources */,
+				2FCC207523ED733700608486 /* QiitaDataSources.swift in Sources */,
+				2FCC207823ED776F00608486 /* QiitaViewModel.swift in Sources */,
 				2FCC204123ED674F00608486 /* SceneDelegate.swift in Sources */,
+				2FCC206F23ED695B00608486 /* QiitaAPI.swift in Sources */,
+				2FCC207323ED6EA100608486 /* QiitaRepository.swift in Sources */,
+				2FCC207123ED6CE900608486 /* QiitaAPIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +608,7 @@
 		};
 		2FCC206623ED675500608486 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FCE4CE301681F3F390E8E2 /* Pods-MVVM_GithubAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +626,7 @@
 		};
 		2FCC206723ED675500608486 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22E7DF818BE88D0AA2073F4 /* Pods-MVVM_GithubAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +644,7 @@
 		};
 		2FCC206923ED675500608486 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3362BFD61491F075F213EC0 /* Pods-MVVM_GithubAPITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +666,7 @@
 		};
 		2FCC206A23ED675500608486 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6387CE52C7F1DAE30FA891DA /* Pods-MVVM_GithubAPITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +688,7 @@
 		};
 		2FCC206C23ED675500608486 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFC136A3E77C260E368C2C3 /* Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +708,7 @@
 		};
 		2FCC206D23ED675500608486 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E502031C4E83A7EEA157367B /* Pods-MVVM_GithubAPI-MVVM_GithubAPIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
