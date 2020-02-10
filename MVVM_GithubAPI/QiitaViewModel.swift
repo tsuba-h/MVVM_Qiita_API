@@ -10,15 +10,17 @@ import RxSwift
 import RxCocoa
 
 //protocol QiitaViewModelInputs {
+// viewからModel
 //}
 
 protocol QiitaViewModelOutputs {
+    //viewに公開するやつ(viewModel -> view)
     var articles: Observable<[QiitaDataSources]> {get} //<- なんのget?
+    //{get}「プロトコルを付加したクラス」利用するクラスからは、読み込みしかできない
     var error: Observable<Error> {get}
 }
 
 protocol QiitaViewModelType {
-    //var inputs: QiitaViewModelInputs {get}
     var outputs: QiitaViewModelOutputs {get}
 }
 
@@ -33,14 +35,27 @@ class QiitaViewModel: QiitaViewModelOutputs {
     private let disposeBag = DisposeBag()
     
     init() {
-
         //outputs
-        let _articles = PublishRelay<[QiitaDataSources]>() //.nextだけ流せる(初期値を持たない)
-        articles = _articles.asObservable()
+        let _articles = PublishRelay<[QiitaDataSources]>() //PublishRelay -> .nextだけ流せる(初期値を持たない)
+        articles = _articles.asObservable() //_article -> 内部で公開するやつ？
         
         let _error = PublishRelay<Error>()
         error = _error.asObservable()
+        
+        QiitaRepository.getQiita()
+            .subscribe(onNext: { (response) in
+                let dataSource = QiitaDataSources.init(items: response)
+                print("aaaaa",dataSource)
+                _articles.accept([dataSource])
+            }, onError: { (error) in
+                _error.accept(error)
+            }).disposed(by: disposeBag)
+            
     }
     
+}
+
+extension QiitaViewModel: QiitaViewModelType {
+    var outputs: QiitaViewModelOutputs {return self}
 }
 

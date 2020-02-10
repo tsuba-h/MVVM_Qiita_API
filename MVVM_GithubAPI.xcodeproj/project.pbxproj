@@ -20,6 +20,8 @@
 		2FCC207323ED6EA100608486 /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC207223ED6EA100608486 /* QiitaRepository.swift */; };
 		2FCC207523ED733700608486 /* QiitaDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC207423ED733700608486 /* QiitaDataSources.swift */; };
 		2FCC207823ED776F00608486 /* QiitaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC207723ED776F00608486 /* QiitaViewModel.swift */; };
+		2FCC207B23F11B5200608486 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC207923F11B5200608486 /* MainTableViewCell.swift */; };
+		2FCC207C23F11B5200608486 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FCC207A23F11B5200608486 /* MainTableViewCell.xib */; };
 		5BF6B08E30497368B49282F5 /* Pods_MVVM_GithubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1995C41B0A5161CBF3EC69DB /* Pods_MVVM_GithubAPI.framework */; };
 		AFB0F7C0FFF18E73041CD8C7 /* Pods_MVVM_GithubAPI_MVVM_GithubAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3079AD3C22E7DFD252FAF94 /* Pods_MVVM_GithubAPI_MVVM_GithubAPIUITests.framework */; };
 		E64E32377D290B9CEB57A5B7 /* Pods_MVVM_GithubAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C63E2E36FBDC8F5D8245015 /* Pods_MVVM_GithubAPITests.framework */; };
@@ -63,6 +65,8 @@
 		2FCC207223ED6EA100608486 /* QiitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRepository.swift; sourceTree = "<group>"; };
 		2FCC207423ED733700608486 /* QiitaDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaDataSources.swift; sourceTree = "<group>"; };
 		2FCC207723ED776F00608486 /* QiitaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewModel.swift; sourceTree = "<group>"; };
+		2FCC207923F11B5200608486 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		2FCC207A23F11B5200608486 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		6387CE52C7F1DAE30FA891DA /* Pods-MVVM_GithubAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_GithubAPITests.release.xcconfig"; path = "Target Support Files/Pods-MVVM_GithubAPITests/Pods-MVVM_GithubAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		7C63E2E36FBDC8F5D8245015 /* Pods_MVVM_GithubAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_GithubAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FCE4CE301681F3F390E8E2 /* Pods-MVVM_GithubAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_GithubAPI.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_GithubAPI/Pods-MVVM_GithubAPI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 				2FCC207723ED776F00608486 /* QiitaViewModel.swift */,
 				2FCC204423ED674F00608486 /* Main.storyboard */,
 				2FCC204223ED674F00608486 /* ViewController.swift */,
+				2FCC207A23F11B5200608486 /* MainTableViewCell.xib */,
+				2FCC207923F11B5200608486 /* MainTableViewCell.swift */,
 				2FCC204723ED675500608486 /* Assets.xcassets */,
 				2FCC204923ED675500608486 /* LaunchScreen.storyboard */,
 				2FCC204C23ED675500608486 /* Info.plist */,
@@ -302,6 +308,7 @@
 			files = (
 				2FCC204B23ED675500608486 /* LaunchScreen.storyboard in Resources */,
 				2FCC204823ED675500608486 /* Assets.xcassets in Resources */,
+				2FCC207C23F11B5200608486 /* MainTableViewCell.xib in Resources */,
 				2FCC204623ED674F00608486 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FCC204323ED674F00608486 /* ViewController.swift in Sources */,
+				2FCC207B23F11B5200608486 /* MainTableViewCell.swift in Sources */,
 				2FCC203F23ED674F00608486 /* AppDelegate.swift in Sources */,
 				2FCC207523ED733700608486 /* QiitaDataSources.swift in Sources */,
 				2FCC207823ED776F00608486 /* QiitaViewModel.swift in Sources */,
