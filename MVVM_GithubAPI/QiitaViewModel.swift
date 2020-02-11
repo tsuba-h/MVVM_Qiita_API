@@ -8,6 +8,7 @@
 
 import RxSwift
 import RxCocoa
+import SwiftyJSON
 
 //protocol QiitaViewModelInputs {
 // viewからModel
@@ -45,11 +46,12 @@ class QiitaViewModel: QiitaViewModelOutputs {
         QiitaRepository.getQiita()
             .subscribe(onNext: { (response) in
                 let dataSource = QiitaDataSources.init(items: response)
-                print("aaaaa",dataSource)
                 _articles.accept([dataSource])
             }, onError: { (error) in
                 _error.accept(error)
             }).disposed(by: disposeBag)
+        
+        QiitaRepository.jsonQiita()
             
     }
     
