@@ -20,6 +20,7 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.5.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - AlamofireImage (~> 3.5)
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.1.0)
   - RxSwift (~> 4.0)
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
@@ -42,6 +44,7 @@ SPEC REPOS:
     - RxCocoa
     - RxDataSources
     - RxSwift
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -54,7 +57,8 @@ SPEC CHECKSUMS:
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 572d9cfecf22ed10acca4eee809ce2d75f20e8ca
+PODFILE CHECKSUM: b3d20fe67506aa3ba43f6d65ca8c8d677765bd40
 
 COCOAPODS: 1.8.3
