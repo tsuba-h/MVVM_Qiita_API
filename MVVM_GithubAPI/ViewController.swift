@@ -21,12 +21,7 @@ class ViewController: UIViewController {
     
     let dataSource = RxTableViewSectionedReloadDataSource<QiitaDataSources>(configureCell: { (dataSource, tableView, indexPath, qiitaItem) -> UITableViewCell in
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
-        if qiitaItem.user.name == "" {
-            cell.userLabel.text = "NoName"
-        } else {
-            cell.userLabel.text = qiitaItem.user.name
-        }
-        cell.titleLabel.text = qiitaItem.title
+        cell.setupCell(qiitaData: qiitaItem)
         return cell
     })
     

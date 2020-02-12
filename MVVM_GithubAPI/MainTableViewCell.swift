@@ -9,7 +9,7 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var userLabel: UILabel!
@@ -19,11 +19,28 @@ class MainTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
+    func setupCell(qiitaData: QiitaItem) {
+        if qiitaData.user.name == "" {
+            userLabel.text = "NoName"
+        } else {
+            userLabel.text = qiitaData.user.name
+        }
+        titleLabel.text = qiitaData.title
+        
+        if let url = URL(string: qiitaData.user.profileImageURL) {
+            do {
+                let data = try Data(contentsOf: url)
+                iconImage.image = UIImage(data: data)
+            } catch {
+                print("error")
+            }
+        }
+    }
 }

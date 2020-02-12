@@ -51,7 +51,7 @@ class QiitaViewModel: QiitaViewModelOutputs {
                 _error.accept(error)
             }).disposed(by: disposeBag)
         
-        QiitaRepository.jsonQiita()
+        //QiitaRepository.jsonQiita()
             
     }
     
