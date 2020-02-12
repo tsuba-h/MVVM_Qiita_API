@@ -33,6 +33,8 @@ final class QiitaRepository {
                     print(error)
                 }
         }.disposed(by: disposeBag)
+        
+        //test
     }
 }
 
