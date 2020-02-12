@@ -33,7 +33,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5sv-wY-0V3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KHX-S2-dF2"/>
+                    <navigationItem key="navigationItem" id="KHX-S2-dF2">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="m3l-Mu-7gj">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tb5-cD-IVU">
+                                <rect key="frame" x="-23" y="-15" width="21" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="suit.heart" catalog="system"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="wkWebView" destination="hGd-vH-33o" id="jhb-nN-70k"/>
                     </connections>
@@ -61,4 +69,7 @@
             <point key="canvasLocation" x="-136.23188405797103" y="110.49107142857143"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="suit.heart" catalog="system" width="64" height="54"/>
+    </resources>
 </document>

@@ -11,7 +11,7 @@ import RxCocoa
 import SwiftyJSON
 
 //protocol QiitaViewModelInputs {
-// viewからModel
+//    //viewからviewModel?
 //}
 
 protocol QiitaViewModelOutputs {

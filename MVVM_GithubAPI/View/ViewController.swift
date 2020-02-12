@@ -46,7 +46,6 @@ class ViewController: UIViewController {
                 let vc = ArticleViewController.instantiate()
                 vc.url = qiitaItem.url
                 self.navigationController?.pushViewController(vc, animated: true)
-                
             }).disposed(by: disposeBag)
     }
 }
