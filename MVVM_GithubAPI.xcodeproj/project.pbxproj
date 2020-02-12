@@ -105,6 +105,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8D737223F3DD0400E53B99 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2FCC207723ED776F00608486 /* QiitaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2F8D737323F3DD1C00E53B99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FCC204423ED674F00608486 /* Main.storyboard */,
+				2FCC204223ED674F00608486 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F8D737423F3DD2500E53B99 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2FCC207A23F11B5200608486 /* MainTableViewCell.xib */,
+				2FCC207923F11B5200608486 /* MainTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		2FCC203223ED674F00608486 = {
 			isa = PBXGroup;
 			children = (
@@ -133,11 +159,9 @@
 				2FCC203E23ED674F00608486 /* AppDelegate.swift */,
 				2FCC204023ED674F00608486 /* SceneDelegate.swift */,
 				2FCC207623ED771400608486 /* Model */,
-				2FCC207723ED776F00608486 /* QiitaViewModel.swift */,
-				2FCC204423ED674F00608486 /* Main.storyboard */,
-				2FCC204223ED674F00608486 /* ViewController.swift */,
-				2FCC207A23F11B5200608486 /* MainTableViewCell.xib */,
-				2FCC207923F11B5200608486 /* MainTableViewCell.swift */,
+				2F8D737223F3DD0400E53B99 /* ViewModel */,
+				2F8D737323F3DD1C00E53B99 /* View */,
+				2F8D737423F3DD2500E53B99 /* TableViewCell */,
 				2FCC204723ED675500608486 /* Assets.xcassets */,
 				2FCC204923ED675500608486 /* LaunchScreen.storyboard */,
 				2FCC204C23ED675500608486 /* Info.plist */,
