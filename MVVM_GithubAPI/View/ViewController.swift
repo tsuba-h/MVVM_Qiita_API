@@ -32,16 +32,27 @@ class ViewController: UIViewController {
         
         tableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "MainTableViewCell")
         
+        //output
         viewModel.outputs.articles
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
         
+        
+        //other
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(QiitaDataSources.Item.self)
+            .subscribe(onNext: { (qiitaItem) in
+                let vc = ArticleViewController.instantiate()
+                vc.url = qiitaItem.url
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+            }).disposed(by: disposeBag)
     }
 }
 
 extension ViewController: UITableViewDelegate {
-
+    
     func tableView(_ tabbleView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
