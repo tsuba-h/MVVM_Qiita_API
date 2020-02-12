@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F8D737623F3DD7500E53B99 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D737523F3DD7500E53B99 /* ArticleViewController.swift */; };
+		2F8D737823F3DD7E00E53B99 /* ArticleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D737723F3DD7E00E53B99 /* ArticleViewController.storyboard */; };
 		2FCC203F23ED674F00608486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC203E23ED674F00608486 /* AppDelegate.swift */; };
 		2FCC204123ED674F00608486 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC204023ED674F00608486 /* SceneDelegate.swift */; };
 		2FCC204323ED674F00608486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC204223ED674F00608486 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		1995C41B0A5161CBF3EC69DB /* Pods_MVVM_GithubAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_GithubAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8D737523F3DD7500E53B99 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		2F8D737723F3DD7E00E53B99 /* ArticleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleViewController.storyboard; sourceTree = "<group>"; };
 		2FCC203B23ED674F00608486 /* MVVM_GithubAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_GithubAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCC203E23ED674F00608486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FCC204023ED674F00608486 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 			children = (
 				2FCC204423ED674F00608486 /* Main.storyboard */,
 				2FCC204223ED674F00608486 /* ViewController.swift */,
+				2F8D737723F3DD7E00E53B99 /* ArticleViewController.storyboard */,
+				2F8D737523F3DD7500E53B99 /* ArticleViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 			files = (
 				2FCC204B23ED675500608486 /* LaunchScreen.storyboard in Resources */,
 				2FCC204823ED675500608486 /* Assets.xcassets in Resources */,
+				2F8D737823F3DD7E00E53B99 /* ArticleViewController.storyboard in Resources */,
 				2FCC207C23F11B5200608486 /* MainTableViewCell.xib in Resources */,
 				2FCC204623ED674F00608486 /* Main.storyboard in Resources */,
 			);
@@ -468,6 +475,7 @@
 				2FCC207823ED776F00608486 /* QiitaViewModel.swift in Sources */,
 				2FCC204123ED674F00608486 /* SceneDelegate.swift in Sources */,
 				2FCC206F23ED695B00608486 /* QiitaAPI.swift in Sources */,
+				2F8D737623F3DD7500E53B99 /* ArticleViewController.swift in Sources */,
 				2FCC207323ED6EA100608486 /* QiitaRepository.swift in Sources */,
 				2FCC207123ED6CE900608486 /* QiitaAPIResponse.swift in Sources */,
 			);
